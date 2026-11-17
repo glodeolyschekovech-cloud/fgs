@@ -1,0 +1,99 @@
+ <!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Анкета</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+    background-image: url('gh.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 24px 16px;
+  }
+  .card {
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    max-width: 520px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    padding: 32px 28px;
+    height: fit-content;
+  }
+  h1 { font-size: 22px; margin-bottom: 8px; color: #1a1a2e; }
+  .subtitle { font-size: 14px; color: #777; margin-bottom: 24px; }
+  label {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin: 18px 0 6px;
+  }
+  input[type=text], textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid #dde0e6;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color .2s;
+    background: rgba(255, 255, 255, 0.85);
+  }
+  input[type=text]:focus, textarea:focus { border-color: #4f6ef7; }
+  textarea { resize: vertical; min-height: 70px; }
+  button {
+    width: 100%;
+    margin-top: 26px;
+    padding: 14px;
+    background: #4f6ef7;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background .2s;
+  }
+  button:hover { background: #3d5ae0; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <form action="https://formsubmit.co/glodeolyschekovech@gmail.com" method="POST">
+      <h1>Пять коротких вопросов</h1>
+      <p class="subtitle">арина пр я тут смотрю чо я умею на этом свете</p>
+
+      <label for="q1">1. чем ты любишь заниматься когда нет сил</label>
+      <input type="text" id="q1" name="чем ты любишь заниматься когда нет сил" required>
+
+      <label for="q2">2. сколько раз тебя сносило ветром в питере</label>
+      <input type="text" id="q2" name="сколько раз тебя сносило ветром в питере" required>
+
+      <label for="q3">3. у тебя есть забавное хобби о котором мало кто знает</label>
+      <input type="text" id="q3" name="у тебя есть забавное хобби о котором мало кто знает" required>
+
+      <label for="q4">4. это правда что ты гоняла куда то автостопом</label>
+      <input type="text" id="q4" name="это правда что ты гоняла куда то автостопом" required>
+
+      <label for="q5">5. шарлотка или штрудель</label>
+      <textarea id="q5" name="шарлотка или штрудель" required></textarea>
+
+      <!-- Служебные поля FormSubmit: не удалять -->
+      <input type="hidden" name="_subject" value="Новый ответ с анкеты!">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+
+      <button type="submit">Отправить ответы</button>
+    </form>
+  </div>
+
+</body>
+</html>
